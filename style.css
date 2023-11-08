@@ -1,32 +1,32 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    background: #222;
-    color: white;
-    font-family: sans-serif;
-}
-
-#grid {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #difficulty-select {
+    margin-bottom: 20px;
+  }
+  
+  #grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-    grid-template-rows: repeat(10, 1fr); 
+    gap: 5px;
+    max-width: 500px;
     margin: 0 auto;
-    height: 600px;
-    width: 600px;
-}
-
-.square {
-    border: solid 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-}
-
-.highlight {
-    background: cyan;
-}
+  }
+  
+  .grid-cell {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .grid-cell.clicked {
+    background-color: #00f;
+    color: #fff;
+  }
+  
